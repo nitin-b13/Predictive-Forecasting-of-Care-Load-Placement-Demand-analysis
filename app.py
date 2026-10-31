@@ -6,8 +6,25 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
-OUT = Path(__file__).resolve().parent / "outputs"
+BASE = Path(__file__).resolve().parent
 st.set_page_config(page_title="UAC Care-Load Forecast Desk", page_icon="📈", layout="wide")
+
+
+def find_outputs():
+    for p in [BASE / "outputs", BASE / "Outputs", BASE.parent / "outputs", Path.cwd() / "outputs"]:
+        if (p / "daily_clean.csv").exists():
+            return p
+    for f in BASE.rglob("daily_clean.csv"):
+        return f.parent
+    return None
+
+
+OUT = find_outputs()
+if OUT is None:
+    st.error("Could not find daily_clean.csv. This is what the app can see in its folder:")
+    st.code("\n".join(sorted(str(p.relative_to(BASE)) for p in BASE.rglob("*")
+                             if ".git" not in p.parts)[:200]))
+    st.stop()
 
 NAVY, TEAL, AMBER, RED, INDIGO, SLATE = "#0B1F3A", "#0F9D8A", "#F59E0B", "#E11D48", "#4F46E5", "#64748B"
 MODEL_COLORS = {"Naive": "#94A3B8", "Moving Avg": "#A78BFA", "ARIMA": "#0EA5E9", "SARIMA": "#0369A1",
