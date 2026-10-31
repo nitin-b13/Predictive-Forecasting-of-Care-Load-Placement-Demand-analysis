@@ -1,0 +1,51 @@
+{
+  "origin": "2025-12-21",
+  "best_model": {
+    "hhs": "Exp. Smoothing",
+    "discharges": "Moving Avg",
+    "transfers": "Moving Avg"
+  },
+  "best_overall": "Exp. Smoothing",
+  "overall_rank": {
+    "Exp. Smoothing": 2.94,
+    "Moving Avg": 3.33,
+    "Random Forest": 3.83,
+    "SARIMA": 3.94,
+    "Naive": 4.56,
+    "Gradient Boosting": 4.56,
+    "ARIMA": 4.83
+  },
+  "headroom_assumption": 0.05,
+  "hhs_mae_7d": 55.65338742098255,
+  "hhs_mape_7d": 1.7841736050701602,
+  "hhs_wape_7d": 2.1140887909205146,
+  "discharges_mae_7d": 10.73792171660734,
+  "discharges_mape_7d": 73.88669375218696,
+  "discharges_wape_7d": 29.917892123799977,
+  "transfers_mae_7d": 13.480346501718614,
+  "transfers_mape_7d": 90.28555111326692,
+  "transfers_wape_7d": 70.22604066580479,
+  "forecast_accuracy_pct_hhs_7d": 98.21582639492983,
+  "forecast_accuracy_pct_discharges_7d_wape": 70.08210787620003,
+  "surge": {
+    "model": "Exp. Smoothing",
+    "events": 14.0,
+    "hits": 1.0,
+    "missed": 13.0,
+    "false_alarms": 3.0,
+    "recall": 7.142857142857142,
+    "precision": 25.0,
+    "avg_lead_days": 28.0
+  },
+  "stability_index": 95.14093942736405,
+  "robustness_win_rate": 76.40449438202246,
+  "long_term_skill_vs_naive": 28.526836443398228,
+  "coverage80_hhs": 80.76891713695117,
+  "coverage95_hhs": 91.9111981563607,
+  "current_hhs": 2484.0,
+  "breach_prob_14d_default": 0.06666666666666667,
+  "breach_prob_28d_default": 0.3953488372093023,
+  "forecast_hhs_7d": 2503.0483820725603,
+  "forecast_hhs_14d": 2518.6539209584967,
+  "forecast_hhs_28d": 2541.9130652642807
+}

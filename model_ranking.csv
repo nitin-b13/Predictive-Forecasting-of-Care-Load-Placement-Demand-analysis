@@ -1,0 +1,22 @@
+target,model,rank
+discharges,Moving Avg,1.3333333333333333
+discharges,Random Forest,2.0
+discharges,Exp. Smoothing,4.0
+discharges,Gradient Boosting,4.166666666666667
+discharges,SARIMA,4.833333333333333
+discharges,Naive,5.0
+discharges,ARIMA,6.666666666666667
+hhs,Exp. Smoothing,1.6666666666666667
+hhs,SARIMA,2.3333333333333335
+hhs,ARIMA,2.6666666666666665
+hhs,Naive,4.666666666666667
+hhs,Random Forest,4.833333333333333
+hhs,Gradient Boosting,5.5
+hhs,Moving Avg,6.333333333333333
+transfers,Moving Avg,2.3333333333333335
+transfers,Exp. Smoothing,3.1666666666666665
+transfers,Gradient Boosting,4.0
+transfers,Naive,4.0
+transfers,Random Forest,4.666666666666667
+transfers,SARIMA,4.666666666666667
+transfers,ARIMA,5.166666666666667

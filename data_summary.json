@@ -1,0 +1,27 @@
+{
+  "raw_rows": 1170,
+  "empty_rows_dropped": 450,
+  "observed_days": 720,
+  "calendar_days": 1075,
+  "missing_days_interpolated": 355,
+  "missing_share_pct": 33.0,
+  "missing_by_weekday": {
+    "Saturday": 154,
+    "Friday": 152,
+    "Sunday": 24,
+    "Monday": 8,
+    "Thursday": 7,
+    "Wednesday": 6,
+    "Tuesday": 4
+  },
+  "start": "2023-01-12",
+  "end": "2025-12-21",
+  "longest_gap_days": 9,
+  "peak_hhs": 11516,
+  "peak_hhs_date": "2023-12-20",
+  "min_hhs": 1972,
+  "min_hhs_date": "2025-08-21",
+  "latest_hhs": 2484,
+  "weekly_seasonal_strength_hhs": 0.25189991698310277,
+  "weekly_seasonal_strength_discharges": 0.6593688331399895
+}
